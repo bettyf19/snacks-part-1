@@ -1,8 +1,10 @@
+const mongoose = require('./connection');
+
 ////////////////////////////////////////////////
 // Our Models
 ////////////////////////////////////////////////
 // pull schema and model from mongoose using object destructuring
-const { Schema, model } = require('mongoose');
+const { Schema, model } = mongoose;
 
 // make snacks schema
 const snacksSchema = new Schema({
